@@ -2,6 +2,7 @@
 marp : true
 author: Jivitesh Debata and Daniel Fisbien
 size : 4:3
+theme: gaia
 ---
 
 # Marp Basics to add content
@@ -11,6 +12,7 @@ size : 4:3
   - _Italic_
   - `code`
 
+![h:200](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Neural_network_explain.png/800px-Neural_network_explain.png?20211111130354)
 
 ---
 # Topic Name
