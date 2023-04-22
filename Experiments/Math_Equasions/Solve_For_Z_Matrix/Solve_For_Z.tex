@@ -276,11 +276,244 @@
         [w_2] + [b_2])[I_{1-2}] = 0
 \end{equation}
 
-\hbox{Go back to equ.3}
+\hbox{expand out matricies}
 
+
+\[
+\theta(
+    \theta(
+\begin{bmatrix}   
+    x_1\\
+    x_2\\
+    x_3\\
+    \end{bmatrix}
+    %
+\begin{bmatrix}
+    w_{y11} & w_{y12} & w_{y13}\\
+    w_{y21} & w_{y22} & w_{y23}\\
+    w_{y31} & w_{y32} & w_{y33}\\
+\end{bmatrix}
+    +
+\begin{bmatrix}
+    b_{y1}\\
+    b_{y2}\\
+    b_{y3}\\
+\end{bmatrix}
+    )
+    %
+\begin{bmatrix}
+    w_{z11} & w_{z12} & w_{z13}\\
+    w_{z21} & w_{z22} & w_{z23}\\
+    w_{z31} & w_{z32} & w_{z33}\\
+\end{bmatrix}
+    +
+\begin{bmatrix}
+    b_{z1}\\
+    b_{z2}\\
+    b_{z3}\\
+\end{bmatrix}
+)
+%
+\begin{bmatrix}   
+    1 & 0 & 0 \\
+    0 & -1 & 0 \\
+    0 & 0 & 0 \\
+    \end{bmatrix} 
+%
+    = 0
+\]
+\hbox{NOTE: will need the transpos of $[x]$}
+
+\[
+\theta(
+    \theta(
+\begin{bmatrix}   
+    x_1 & x_2  & x_3\\
+    \end{bmatrix}
+    %
+\begin{bmatrix}
+    w_{y11} & w_{y12} & w_{y13}\\
+    w_{y21} & w_{y22} & w_{y23}\\
+    w_{y31} & w_{y32} & w_{y33}\\
+\end{bmatrix}
+    +
+    \begin{bmatrix}
+        b_{y1}\\
+        b_{y2}\\
+        b_{y3}\\
+    \end{bmatrix}
+    )
+    %
+\begin{bmatrix}
+    w_{z11} & w_{z12} & w_{z13}\\
+    w_{z21} & w_{z22} & w_{z23}\\
+    w_{z31} & w_{z32} & w_{z33}\\
+\end{bmatrix}
+    +
+    \begin{bmatrix}
+        b_{z1}\\
+        b_{z2}\\
+        b_{z3}\\
+    \end{bmatrix}
+)
+%
+\begin{bmatrix}   
+    1 & 0 & 0 \\
+    0 & -1 & 0 \\
+    0 & 0 & 0 \\
+    \end{bmatrix} 
+%
+    = 0
+\]
+
+\hbox{simplify}
+
+\[
+\theta(
+    \theta(
+\begin{bmatrix}   
+    x_1*w_{y11} + x_2*w_{y21} + x_3*w_{y31}\\
+    x_1*w_{y12} + x_2*w_{y22} + x_3*w_{y32}\\
+    x_1*w_{y13} + x_2*w_{y23} + x_3*w_{y33}\\
+    \end{bmatrix}
+    +
+    \begin{bmatrix}
+        b_{y1}\\
+        b_{y2}\\
+        b_{y3}\\
+    \end{bmatrix}
+    )
+    %
+\begin{bmatrix}
+    w_{z11} & w_{z12} & w_{z13}\\
+    w_{z21} & w_{z22} & w_{z23}\\
+    w_{z31} & w_{z32} & w_{z33}\\
+\end{bmatrix}
+    +
+\begin{bmatrix}
+    \begin{bmatrix}
+        b_{z1}\\
+        b_{z2}\\
+        b_{z3}\\
+    \end{bmatrix}
+\end{bmatrix}
+)
+%
+\begin{bmatrix}   
+    1 & 0 & 0 \\
+    0 & -1 & 0 \\
+    0 & 0 & 0 \\
+    \end{bmatrix} 
+%
+    = 0
+\]
+
+\[
+\theta(
+    \theta(
+\begin{bmatrix}   
+    x_1*w_{y11} + x_2*w_{y21} + x_3*w_{y31} + b_{y1}\\
+    x_1*w_{y12} + x_2*w_{y22} + x_3*w_{y32} + b_{y2}\\
+    x_1*w_{y13} + x_2*w_{y23} + x_3*w_{y33} + b_{y3}\\
+    \end{bmatrix}
+    )
+    %
+\begin{bmatrix}
+    w_{z11} & w_{z12} & w_{z13}\\
+    w_{z21} & w_{z22} & w_{z23}\\
+    w_{z31} & w_{z32} & w_{z33}\\
+\end{bmatrix}
+    +
+\begin{bmatrix}
+    \begin{bmatrix}
+        b_{z1}\\
+        b_{z2}\\
+        b_{z3}\\
+    \end{bmatrix}
+\end{bmatrix}
+)
+%
+\begin{bmatrix}   
+    1 & 0 & 0 \\
+    0 & -1 & 0 \\
+    0 & 0 & 0 \\
+    \end{bmatrix} 
+%
+    = 0
+\]
+
+\[
+\theta(   
+\begin{bmatrix}   
+    \theta(x_1*w_{y11} + x_2*w_{y21} + x_3*w_{y31} + b_{y1})\\
+    \theta(x_1*w_{y12} + x_2*w_{y22} + x_3*w_{y32} + b_{y2})\\
+    \theta(x_1*w_{y13} + x_2*w_{y23} + x_3*w_{y33} + b_{y3})\\
+    \end{bmatrix}
+    %
+\begin{bmatrix}
+    w_{z11} & w_{z12} & w_{z13}\\
+    w_{z21} & w_{z22} & w_{z23}\\
+    w_{z31} & w_{z32} & w_{z33}\\
+\end{bmatrix}
+    +
+\begin{bmatrix}
+    \begin{bmatrix}
+        b_{z1}\\
+        b_{z2}\\
+        b_{z3}\\
+    \end{bmatrix}
+\end{bmatrix}
+)
+%
+\begin{bmatrix}   
+    1 & 0 & 0 \\
+    0 & -1 & 0 \\
+    0 & 0 & 0 \\
+    \end{bmatrix} 
+%
+    = 0
+\]
+\hbox{define:}
 \begin{equation}
-    [z][I_1] = [z][I_2]
+    A_1 = \theta(x_1*w_{y11} + x_2*w_{y21} + x_3*w_{y31} + b_{y1})
+    A_2 = \theta(x_1*w_{y12} + x_2*w_{y22} + x_3*w_{y32} + b_{y2}) 
 \end{equation}
 
-\hbox{expand Z}
+\[
+\theta(   
+\begin{bmatrix}   
+    A_1\\
+    A_2\\
+    \theta(x_1*w_{y13} + x_2*w_{y23} + x_3*w_{y33} + b_{y3})\\
+    \end{bmatrix}
+    %
+\begin{bmatrix}
+    w_{z11} & w_{z12} & w_{z13}\\
+    w_{z21} & w_{z22} & w_{z23}\\
+    w_{z31} & w_{z32} & w_{z33}\\
+\end{bmatrix}
+    +
+\begin{bmatrix}
+    \begin{bmatrix}
+        b_{z1}\\
+        b_{z2}\\
+        b_{z3}\\
+    \end{bmatrix}
+\end{bmatrix}
+)
+%
+\begin{bmatrix}   
+    1 & 0 & 0 \\
+    0 & -1 & 0 \\
+    0 & 0 & 0 \\
+    \end{bmatrix} 
+%
+    = 0
+\]
+
+
+
+\section{Conclusion}
+Not much of a paper, but it's a start.
+
 \end{document}

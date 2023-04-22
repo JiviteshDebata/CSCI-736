@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2023.1.27)  22 APR 2023 16:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2023.1.27)  22 APR 2023 17:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -205,19 +205,54 @@ Package pdftex.def Info: Given_NN.png  used on input line 16.
 (pdftex.def)             Requested size: 172.5pt x 117.6249pt.
  [1
 
-{C:/Users/johns/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./Given_NN.png>] [2] [3] [4] (Solve_For_Z.aux) ) 
+{C:/Users/johns/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./Given_NN.png>] [2] [3]
+Overfull \hbox (37.3701pt too wide) detected at line 324
+\OML/cmm/m/it/10 ^^R\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^R\OT1/cmr/m/n/10 ([] [] + []) [] + []) [] = 0
+ []
+
+
+Overfull \hbox (72.7729pt too wide) detected at line 367
+\OML/cmm/m/it/10 ^^R\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^R\OT1/cmr/m/n/10 ([] [] + []) [] + []) [] = 0
+ []
+
+
+Overfull \hbox (88.8836pt too wide) detected at line 409
+\OML/cmm/m/it/10 ^^R\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^R\OT1/cmr/m/n/10 ([] + []) [] + []) [] = 0
+ []
+
+
+Overfull \hbox (79.99457pt too wide) detected at line 443
+\OML/cmm/m/it/10 ^^R\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^R\OT1/cmr/m/n/10 ([]) [] + []) [] = 0
+ []
+
+
+Overfull \hbox (79.99457pt too wide) detected at line 475
+\OML/cmm/m/it/10 ^^R\OT1/cmr/m/n/10 ([] [] + []) [] = 0
+ []
+
+
+Overfull \hbox (14.8122pt too wide) detected at line 480
+[]\OML/cmm/m/it/10 A[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 ^^R\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[] \OMS/cmsy/m/n/10 ^^C \OML/cmm/m/it/10 w[] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 x[] \OMS/cmsy/m/n/10 ^^C \OML/cmm/m/it/10 w[] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 x[] \OMS/cmsy/m/n/10 ^^C \OML/cmm/m/it/10 w[] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 b[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 A[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 ^^R\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[] \OMS/cmsy/m/n/10 ^^C \OML/cmm/m/it/10 w[] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 x[] \OMS/cmsy/m/n/10 ^^C \OML/cmm/m/it/10 w[] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 x[] \OMS/cmsy/m/n/10 ^^C \OML/cmm/m/it/10 w[] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 b[]\OT1/cmr/m/n/10 )
+ []
+
+
+Overfull \hbox (79.99457pt too wide) detected at line 512
+\OML/cmm/m/it/10 ^^R\OT1/cmr/m/n/10 ([] [] + []) [] = 0
+ []
+
+[4] [5] (Solve_For_Z.aux) ) 
 Here is how much of TeX's memory you used:
  3073 strings out of 476404
  54030 string characters out of 2789524
- 1865324 words of memory out of 3000000
+ 1888324 words of memory out of 3000000
  23414 multiletter control sequences out of 15000+600000
  518733 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,7n,67p,318b,243s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 62i,13n,67p,318b,243s stack positions out of 10000i,1000n,20000p,200000b,80000s
 <C:/Users/johns/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/johns/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/johns/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/johns/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/johns/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/johns/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/johns/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/johns/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/johns/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/johns/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/johns/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/johns/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/johns/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/johns/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on Solve_For_Z.pdf (4 pages, 160085 bytes).
+Output written on Solve_For_Z.pdf (5 pages, 163992 bytes).
 PDF statistics:
- 86 PDF objects out of 1000 (max. 8388607)
+ 89 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
