@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1681270746 "c:/Users/johns/Documents/NNandML/OpenSet/Project/Solving_for_Z.tex" "Solving_for_Z.pdf" "Solving_for_Z" 1681270747 0
+["pdflatex"] 1682201330 "c:/Users/johns/Documents/NNandML/OpenSet/Project/CSCI-736/Experiments/Math_Equasions/Solve_for_Z_algibra/Solving_for_Z.tex" "Solving_for_Z.pdf" "Solving_for_Z" 1682201331 0
   "C:/Users/johns/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1681239732 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/johns/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1674841424 23172981 3889eeb253c6879e78cd13b47d9b934a ""
   "C:/Users/johns/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233955448 1004 54797486969f23fa377b128694d548df ""
@@ -56,9 +56,9 @@
   "C:/Users/johns/AppData/Local/Programs/MiKTeX/tex/latex/kvsetkeys/kvsetkeys.sty" 1665066333 13815 760b0c02f691ea230f5359c4e1de23a7 ""
   "C:/Users/johns/AppData/Local/Programs/MiKTeX/tex/latex/l3backend/l3backend-pdftex.def" 1673904422 30429 213676d4c7327a21d91ddaed900e7b81 ""
   "Given_NN.png" 1681234570 15856 d367efa419e691b7724d9d936f700038 ""
-  "Solving_for_Z.aux" 1681270747 493 4dbd3f948465a7f436db285c9694b73a "pdflatex"
-  "Solving_for_Z.tex" 1681270745 13368 70f48b6f6156f0a75c2ee98497f68c62 ""
-  "c:/Users/johns/Documents/NNandML/OpenSet/Project/Solving_for_Z.tex" 1681270745 13368 70f48b6f6156f0a75c2ee98497f68c62 ""
+  "Solving_for_Z.aux" 1682201331 493 4dbd3f948465a7f436db285c9694b73a "pdflatex"
+  "Solving_for_Z.tex" 1682201330 13402 72846002f27802f7c75a306eb3a0cb05 ""
+  "c:/Users/johns/Documents/NNandML/OpenSet/Project/CSCI-736/Experiments/Math_Equasions/Solve_for_Z_algibra/Solving_for_Z.tex" 1682201330 13402 72846002f27802f7c75a306eb3a0cb05 ""
   (generated)
   "Solving_for_Z.aux"
   "Solving_for_Z.log"

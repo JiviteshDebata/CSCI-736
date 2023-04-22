@@ -474,17 +474,28 @@
     = 0
 \]
 \hbox{define:}
-\begin{equation}
-    A_1 = \theta(x_1*w_{y11} + x_2*w_{y21} + x_3*w_{y31} + b_{y1})
-    A_2 = \theta(x_1*w_{y12} + x_2*w_{y22} + x_3*w_{y32} + b_{y2}) 
-\end{equation}
+\begin{multline}
+    \\
+    A_1 = x_1*w_{y11} + x_2*w_{y21} + x_3*w_{y31} + b_{y1}\\
+    A_2 = x_1*w_{y12} + x_2*w_{y22} + x_3*w_{y32} + b_{y2}\\
+    A_3 = x_1*w_{y13} + x_2*w_{y23} + x_3*w_{y33} + b_{y3}\\
+\end{multline}
+
+\hbox{OR AS:}
+
+\begin{multline}
+    \\
+    A_1 = (\sum_{i=1, j}^{len([x])} w_{yi,j=1}*x_i) + b_{yj=1}\\
+    A_2 = (\sum_{i=1, j}^{len([x])} w_{yi,j=2}*x_i) + b_{yj=2}\\
+    A_3 = (\sum_{i=1, j}^{len([x])} w_{yi,j=3}*x_i) + b_{yj=3}\\
+\end{multline}
 
 \[
 \theta(   
 \begin{bmatrix}   
-    A_1\\
-    A_2\\
-    \theta(x_1*w_{y13} + x_2*w_{y23} + x_3*w_{y33} + b_{y3})\\
+    \theta(A_1)\\
+    \theta(A_2)\\
+    \theta(A_3)\\
     \end{bmatrix}
     %
 \begin{bmatrix}
