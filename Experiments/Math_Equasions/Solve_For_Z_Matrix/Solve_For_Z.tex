@@ -108,6 +108,176 @@
     z_1 = z_2    
 \end{equation}
 
+\hbox{NOTE: Observe I as the identity matrix}
+
+\begin{equation}
+    I = \begin{bmatrix}
+        1 & 0 & 0\\
+        0 & 1 & 0\\
+        0 & 0 & 1\\
+    \end{bmatrix}
+\end{equation}
+
+\hbox{NOTE: Observe $[x]I$}
+\[
+[x]I = \begin{bmatrix}   
+    x_1\\
+    x_2\\
+    x_3\\
+    \end{bmatrix}
+%
+\begin{bmatrix}   
+    1 & 0 & 0 \\
+    0 & 1 & 0 \\
+    0 & 0 & 1 \\
+    \end{bmatrix} = 
+%
+    \begin{bmatrix}
+        x_1\\
+        x_2\\
+        x_3\\
+    \end{bmatrix}
+\]
+
+\hbox{NOTE: Observe:}
+\[
+\begin{bmatrix}   
+    x_1\\
+    x_2\\
+    x_3\\
+    \end{bmatrix}
+%
+\begin{bmatrix}   
+    1 & 0 & 0 \\
+    0 & 0 & 0 \\
+    0 & 0 & 0 \\
+    \end{bmatrix} = 
+%
+    \begin{bmatrix}
+        x_1\\
+        0\\
+        0\\
+    \end{bmatrix}
+\]
+
+\[
+\begin{bmatrix}   
+    x_1\\
+    x_2\\
+    x_3\\
+    \end{bmatrix}
+%
+\begin{bmatrix}   
+    0 & 0 & 0 \\
+    0 & 1 & 0 \\
+    0 & 0 & 0 \\
+    \end{bmatrix} = 
+%
+    \begin{bmatrix}
+        0\\
+        x_2\\
+        0\\
+    \end{bmatrix}
+\]
+
+\hbox{Denote:}
+
+\[
+    [I_1] = \begin{bmatrix}   
+    1 & 0 & 0 \\
+    0 & 0 & 0 \\
+    0 & 0 & 0 \\
+    \end{bmatrix}
+\]
+
+\hbox{Denote:}
+
+\[
+    [I_2] = \begin{bmatrix}   
+    0 & 0 & 0 \\
+    0 & 1 & 0 \\
+    0 & 0 & 0 \\
+    \end{bmatrix}
+\]
+
+\hbox{we can rewrite: $z_1 = z_2$ as:}
+
+\begin{equation}
+    [z][I_1] = [z][I_2]
+\end{equation}
+
+\hbox{move everything to one side}
+\begin{equation}
+    [z][I_1] - [z][I_2] = 0
+\end{equation}
+
+
+\hbox{factor $[z]$}
+\begin{equation}
+    [z]([I_1] - [I_2]) = 0
+\end{equation}
+
+\hbox{expand $[I_1]$ and $[I_2]$}
+\begin{equation}
+    [z](\begin{bmatrix}   
+        1 & 0 & 0 \\
+        0 & 0 & 0 \\
+        0 & 0 & 0 \\
+        \end{bmatrix} 
+        - 
+        \begin{bmatrix}   
+            0 & 0 & 0 \\
+            0 & 1 & 0 \\
+            0 & 0 & 0 \\
+            \end{bmatrix}) = 0
+\end{equation}
+
+\hbox{simplify}
+\begin{equation}
+    [z]\begin{bmatrix}   
+        1 & 0 & 0 \\
+        0 & -1 & 0 \\
+        0 & 0 & 0 \\
+        \end{bmatrix} = 0
+\end{equation}
+
+\hbox{Denote: }
+\begin{equation}
+    [I_{1-2}] = \begin{bmatrix}   
+        1 & 0 & 0 \\
+        0 & -1 & 0 \\
+        0 & 0 & 0 \\
+        \end{bmatrix}
+\end{equation}
+
+\hbox{return to matrix notation}
+\begin{equation}
+    [z][I_{1-2}] = 0
+\end{equation}
+
+
+\hbox{expand $[z]$}
+
+\begin{equation}
+    [z] = \sigma([y][w_2] + [b_2])
+\end{equation}
+
+\begin{equation}
+    [z] = \sigma(
+            \sigma([x][w_1] + [b_1])
+        [w_2] + [b_2])
+\end{equation}
+
+\hbox{substatute eq.11 into eq.9}
+
+\begin{equation}
+    \sigma(
+            \sigma([x][w_1] + [b_1])
+        [w_2] + [b_2])[I_{1-2}] = 0
+\end{equation}
+
+
+
 
 
 
