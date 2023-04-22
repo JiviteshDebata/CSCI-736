@@ -429,8 +429,310 @@
 \end{multline}
 \hbox{This will got to EQ.43. This is a dead end.}
 
-\hbox{continue wiht eq.43}
+\hbox{NOTE: continue wiht eq.43}
+\hbox{MULTIPLY BY COMMON DENOMINATOR}
+\begin{multline}
+    \\
+    (w_{y_1->z_1} - w_{y_1->z_2}) * (1+\exp[B_2]) * (1+\exp[B_3]) +\\
+    (w_{y_2->z_1} - w_{y_2->z_2}) * (1+\exp[B_1]) * (1+\exp[B_3]) +\\
+    (w_{y_3->z_1} - w_{y_3->z_2}) * (1+\exp[B_1]) * (1+\exp[B_2]) 
+    \\= (b_{z_2} - b_{z_1}) * ((1+\exp[B_1]) * (1+\exp[B_2]) * (1+\exp[B_3]))
+    \\
+\end{multline}
 
+\hbox{define:}
+\begin{multline}
+    \\
+    A_1 = 1+\exp[B_1]\\
+    A_2 = 1+\exp[B_2]\\
+    A_3 = 1+\exp[B_3]\\
+\end{multline}
+
+\hbox{substatute in}
+\begin{multline}
+    \\
+    (w_{y_1->z_1} - w_{y_1->z_2}) A_2 A_3 +
+    (w_{y_2->z_1} - w_{y_2->z_2}) A_1 A_3 +
+    (w_{y_3->z_1} - w_{y_3->z_2}) A_1 A_2 
+    \\= (b_{z_2} - b_{z_1}) A_1 A_2 A_3
+    \\
+\end{multline}
+
+\hbox{simplify $A_1 * A_2$}
+\begin{multline}
+    \\
+    A_1A_2 = (1+\exp[B_1])(1+\exp[B_2])\\
+    A_1A_2 = 1 + \exp[B_2] + \exp[B_1] + \exp[B_1]\exp[B_2] \\
+    A_1A_2 = 1 + \exp[B_2] + \exp[B_1] + \exp[B_1+B_2] \\
+\end{multline}
+
+\hbox{simplify $A_1 * A_3$}
+\begin{multline}
+    \\
+    A_1A_3 = (1+\exp[B_1])(1+\exp[B_3])\\
+    A_1A_3 = 1 + \exp[B_3] + \exp[B_1] + \exp[B_1]\exp[B_3] \\
+    A_1A_3 = 1 + \exp[B_3] + \exp[B_1] + \exp[B_1+B_3] \\
+\end{multline}
+
+\hbox{simplify $A_2 * A_3$}
+\begin{multline}
+    \\
+    A_2A_3 = (1+\exp[B_2])(1+\exp[B_3])\\
+    A_2A_3 = 1 + \exp[B_3] + \exp[B_2] + \exp[B_2]\exp[B_3] \\
+    A_2A_3 = 1 + \exp[B_3] + \exp[B_2] + \exp[B_2+B_3] \\
+\end{multline}
+
+\hbox{simplify $A_1 * A_2 * A_3$}
+\begin{multline}
+    \\
+    A_1A_2A_3 = (1+\exp[B_2])(1+\exp[B_3])\\
+    A_1A_2A_3 = (1+\exp[B_1])(1 + \exp[B_3] + \exp[B_2] + \exp[B_2]\exp[B_3])\\
+    A_1A_2A_3 = 1 + \exp[B_3] + \exp[B_2] + \exp[B_1] +\\
+                \exp[B_2]\exp[B_3] + \exp[B_1]\exp[B_3] + \exp[B_1]\exp[B_2] +\\
+                \exp[B_1]\exp[B_2]\exp[B_3]\\
+    A_1A_2A_3 = 1 + \exp[B_3] + \exp[B_2] + \exp[B_1] + \exp[B_2+B_3] + \exp[B_1+B_3] + \exp[B_1+B_2] + \exp[B_1+B_2+B_3]\\
+\end{multline}
+
+\hbox{substatute into eq.50}
+\begin{multline}
+    \\
+    (w_{y_1->z_1} - w_{y_1->z_2}) (1 + \exp[B_3] + \exp[B_2] + \exp[B_2+B_3]) +\\
+    (w_{y_2->z_1} - w_{y_2->z_2}) (1 + \exp[B_3] + \exp[B_1] + \exp[B_1+B_3]) +\\
+    (w_{y_3->z_1} - w_{y_3->z_2}) (1 + \exp[B_2] + \exp[B_1] + \exp[B_1+B_2])\\ 
+    = (b_{z_2} - b_{z_1})(1 + \exp[B_3] + \exp[B_2] + \exp[B_1] + \exp[B_2+B_3] + \exp[B_1+B_3] + \exp[B_1+B_2] + \exp[B_1+B_2+B_3])
+    \\
+\end{multline}
+
+\hbox{expand each line of eq.55: }
+\begin{multline}\\
+    w_{y_1->z_1} - w_{y_1->z_2} +\\
+    (w_{y_1->z_1} - w_{y_1->z_2})\exp[B_3] + \\
+    (w_{y_1->z_1} - w_{y_1->z_2})\exp[B_2] + \\
+    (w_{y_1->z_1} - w_{y_1->z_2})\exp[B_2+B_3] \\
+\end{multline}
+
+\begin{multline}\\
+    w_{y_2->z_1} - w_{y_2->z_2} + \\
+    (w_{y_2->z_1} - w_{y_2->z_2})\exp[B_3] +\\
+    (w_{y_2->z_1} - w_{y_2->z_2})\exp[B_1] +\\
+    (w_{y_2->z_1} - w_{y_2->z_2})\exp[B_1+B_3]\\
+\end{multline}
+
+\begin{multline}\\
+    w_{y_3->z_1} - w_{y_3->z_2} +\\
+    (w_{y_3->z_1} - w_{y_3->z_2})\exp[B_2] +\\
+    (w_{y_3->z_1} - w_{y_3->z_2})\exp[B_1] +\\
+    (w_{y_3->z_1} - w_{y_3->z_2})\exp[B_1+B_2]\\     
+\end{multline}
+
+\begin{multline}\\
+    b_{z_2} - b_{z_1} +\\
+    (b_{z_2} - b_{z_1})\exp[B_3] +\\
+    (b_{z_2} - b_{z_1})\exp[B_2] +\\
+    (b_{z_2} - b_{z_1})\exp[B_1] +\\
+    (b_{z_2} - b_{z_1})\exp[B_2+B_3] +\\
+    (b_{z_2} - b_{z_1})\exp[B_1+B_3] +\\
+    (b_{z_2} - b_{z_1})\exp[B_1+B_2] +\\
+    (b_{z_2} - b_{z_1})\exp[B_1+B_2+B_3]\\
+\end{multline}
+
+\hbox{combine everything}
+
+\begin{multline}\\
+    w_{y_1->z_1} - w_{y_1->z_2} +\\
+    (w_{y_1->z_1} - w_{y_1->z_2})\exp[B_3] + \\
+    (w_{y_1->z_1} - w_{y_1->z_2})\exp[B_2] + \\
+    (w_{y_1->z_1} - w_{y_1->z_2})\exp[B_2+B_3]  +\\ 
+    w_{y_2->z_1} - w_{y_2->z_2} + \\
+    (w_{y_2->z_1} - w_{y_2->z_2})\exp[B_3] +\\
+    (w_{y_2->z_1} - w_{y_2->z_2})\exp[B_1] +\\
+    (w_{y_2->z_1} - w_{y_2->z_2})\exp[B_1+B_3] +\\
+    w_{y_3->z_1} - w_{y_3->z_2} +\\
+    (w_{y_3->z_1} - w_{y_3->z_2})\exp[B_2] +\\
+    (w_{y_3->z_1} - w_{y_3->z_2})\exp[B_1] +\\
+    (w_{y_3->z_1} - w_{y_3->z_2})\exp[B_1+B_2] =\\
+    b_{z_2} - b_{z_1} +\\
+    (b_{z_2} - b_{z_1})\exp[B_3] +\\
+    (b_{z_2} - b_{z_1})\exp[B_2] +\\
+    (b_{z_2} - b_{z_1})\exp[B_1] +\\
+    (b_{z_2} - b_{z_1})\exp[B_2+B_3] +\\
+    (b_{z_2} - b_{z_1})\exp[B_1+B_3] +\\
+    (b_{z_2} - b_{z_1})\exp[B_1+B_2] +\\
+    (b_{z_2} - b_{z_1})\exp[B_1+B_2+B_3]\\
+\end{multline}
+
+\hbox{move everything to one side}
+
+\begin{multline}
+    w_{y_1->z_1} - w_{y_1->z_2} +\\
+    (w_{y_1->z_1} - w_{y_1->z_2})\exp[B_3] + \\
+    (w_{y_1->z_1} - w_{y_1->z_2})\exp[B_2] + \\
+    (w_{y_1->z_1} - w_{y_1->z_2})\exp[B_2+B_3]  +\\ 
+    w_{y_2->z_1} - w_{y_2->z_2} + \\
+    (w_{y_2->z_1} - w_{y_2->z_2})\exp[B_3] +\\
+    (w_{y_2->z_1} - w_{y_2->z_2})\exp[B_1] +\\
+    (w_{y_2->z_1} - w_{y_2->z_2})\exp[B_1+B_3] +\\
+    w_{y_3->z_1} - w_{y_3->z_2} +\\
+    (w_{y_3->z_1} - w_{y_3->z_2})\exp[B_2] +\\
+    (w_{y_3->z_1} - w_{y_3->z_2})\exp[B_1] +\\
+    (w_{y_3->z_1} - w_{y_3->z_2})\exp[B_1+B_2] -\\
+    b_{z_2} + b_{z_1} -\\
+    (b_{z_2} - b_{z_1})\exp[B_3] -\\
+    (b_{z_2} - b_{z_1})\exp[B_2] -\\
+    (b_{z_2} - b_{z_1})\exp[B_1] -\\
+    (b_{z_2} - b_{z_1})\exp[B_2+B_3] -\\
+    (b_{z_2} - b_{z_1})\exp[B_1+B_3] -\\
+    (b_{z_2} - b_{z_1})\exp[B_1+B_2] -\\
+    (b_{z_2} - b_{z_1})\exp[B_1+B_2+B_3] = 0\\
+\end{multline}
+
+\hbox{Reorder based on exponent}
+\begin{multline}\\
+    w_{y_1->z_1} - w_{y_1->z_2} +
+    w_{y_2->z_1} - w_{y_2->z_2} +
+    w_{y_3->z_1} - w_{y_3->z_2} 
+    - b_{z_2} + b_{z_1} \\
+    %
+    (w_{y_1->z_1} - w_{y_1->z_2})\exp[B_3] + 
+    (w_{y_2->z_1} - w_{y_2->z_2})\exp[B_3]  
+    - (b_{z_2} - b_{z_1})\exp[B_3] \\
+    %
+    (w_{y_1->z_1} - w_{y_1->z_2})\exp[B_2] + 
+    (w_{y_3->z_1} - w_{y_3->z_2})\exp[B_2] 
+    - (b_{z_2} - b_{z_1})\exp[B_2] \\
+    %
+    (w_{y_2->z_1} - w_{y_2->z_2})\exp[B_1] +
+    (w_{y_3->z_1} - w_{y_3->z_2})\exp[B_1]
+    - (b_{z_2} - b_{z_1})\exp[B_1] \\
+    %
+    (w_{y_1->z_1} - w_{y_1->z_2})\exp[B_2+B_3] -
+    (b_{z_2} - b_{z_1})\exp[B_2+B_3] +\\ 
+    %
+    (w_{y_2->z_1} - w_{y_2->z_2})\exp[B_1+B_3]
+    - (b_{z_2} - b_{z_1})\exp[B_1+B_3] \\
+    %
+    (w_{y_3->z_1} - w_{y_3->z_2})\exp[B_1+B_2]
+    - (b_{z_2} - b_{z_1})\exp[B_1+B_2] \\
+    %
+    - (b_{z_2} - b_{z_1})\exp[B_1+B_2+B_3] = 0\\
+\end{multline}
+
+\hbox{factor}
+\begin{multline}\\
+    w_{y_1->z_1} - w_{y_1->z_2} +
+    w_{y_2->z_1} - w_{y_2->z_2} +
+    w_{y_3->z_1} - w_{y_3->z_2} 
+    - b_{z_2} + b_{z_1} +\\
+    %
+    (w_{y_1->z_1} - w_{y_1->z_2}+ 
+    w_{y_2->z_1} - w_{y_2->z_2} 
+    - b_{z_2} + b_{z_1})\exp[B_3] +\\
+    %
+    (w_{y_1->z_1} - w_{y_1->z_2}+ 
+    w_{y_3->z_1} - w_{y_3->z_2}
+    - b_{z_2} + b_{z_1})\exp[B_2] +\\
+    %
+    (w_{y_2->z_1} - w_{y_2->z_2}+
+    w_{y_3->z_1} - w_{y_3->z_2}
+    - b_{z_2} + b_{z_1})\exp[B_1] +\\
+    %
+    (w_{y_1->z_1} - w_{y_1->z_2} -
+    b_{z_2} + b_{z_1})\exp[B_2+B_3] +\\ 
+    %
+    (w_{y_2->z_1} - w_{y_2->z_2}
+    - b_{z_2} + b_{z_1})\exp[B_1+B_3] +\\
+    %
+    (w_{y_3->z_1} - w_{y_3->z_2}
+    - b_{z_2} + b_{z_1})\exp[B_1+B_2] +\\
+    %
+    (-b_{z_2} + b_{z_1})\exp[B_1+B_2+B_3] = 0\\
+\end{multline}
+
+\hbox{Define Constants}
+\begin{multline}\\
+    C_0 = w_{y_1->z_1} - w_{y_1->z_2} +
+    w_{y_2->z_1} - w_{y_2->z_2} +
+    w_{y_3->z_1} - w_{y_3->z_2} 
+    - b_{z_2} + b_{z_1}\\
+    %
+    C_3 = (w_{y_1->z_1} - w_{y_1->z_2}+ 
+    w_{y_2->z_1} - w_{y_2->z_2} 
+    - b_{z_2} + b_{z_1})\\
+    %
+    C_2 = (w_{y_1->z_1} - w_{y_1->z_2}+ 
+    w_{y_3->z_1} - w_{y_3->z_2}
+    - b_{z_2} + b_{z_1})\\
+    %
+    C_1 = (w_{y_2->z_1} - w_{y_2->z_2}+
+    w_{y_3->z_1} - w_{y_3->z_2}
+    - b_{z_2} + b_{z_1})\\
+    %
+    C_4 = (w_{y_1->z_1} - w_{y_1->z_2} -
+    b_{z_2} + b_{z_1})\\ 
+    %
+    C_5 = (w_{y_2->z_1} - w_{y_2->z_2}
+    - b_{z_2} + b_{z_1})\\
+    %
+    C_6 = (w_{y_3->z_1} - w_{y_3->z_2}
+    - b_{z_2} + b_{z_1})\\
+    %
+    C_7 = (-b_{z_2} + b_{z_1})\\
+\end{multline}
+
+\hbox{substatute constants:}
+\begin{multline}\\
+    C_0 +\\
+    %
+    C_3*\exp[B_3] +\\
+    %
+    C_2*\exp[B_2] +\\
+    %
+    C_1*\exp[B_1] +\\
+    %
+    C_4*\exp[B_2+B_3] +\\ 
+    %
+    C_5*\exp[B_1+B_3] +\\
+    %
+    C_6*\exp[B_1+B_2] +\\
+    %
+    C_7*\exp[B_1+B_2+B_3] = 0\\
+\end{multline}
+
+\hbox{Reorder:}
+\begin{multline}\\
+    C_0 + C_1*\exp[B_1] + C_2*\exp[B_2] + C_3*\exp[B_3] +\\
+    %
+    C_4*\exp[B_2+B_3] + C_5*\exp[B_1+B_3] + C_6*\exp[B_1+B_2] +\\
+    C_7*\exp[B_1+B_2+B_3] = 0\\
+\end{multline}
+
+\hbox{Move multipliers to exponents}
+\begin{multline}\\
+    C_0 + \exp[B_1^{C_1}] + \exp[B_2^{C_2}] + \exp[B_3^{C_3}] +\\
+    \exp[(B_2+B_3)^{C_4}] + \exp[(B_1+B_3)^{C_5}] + \exp[(B_1+B_2)^{C_6}] +\\
+    \exp[(B_1+B_2+B_3)^{C_7}] = 0\\
+\end{multline}
+
+\hbox{Make non-zero}
+\begin{multline}\\
+    C_0 + \exp[B_1^{C_1}] + \exp[B_2^{C_2}] + \exp[B_3^{C_3}] +\\
+    \exp[(B_2+B_3)^{C_4}] + \exp[(B_1+B_3)^{C_5}] + \exp[(B_1+B_2)^{C_6}] +\\
+     = -\exp[(B_1+B_2+B_3)^{C_7}]\\
+\end{multline}
+
+\hbox{Make non-zero}
+\begin{multline}\\
+    \exp[B_1^{C_1}] + \exp[B_2^{C_2}] + \exp[B_3^{C_3}] +\\
+    \exp[(B_2+B_3)^{C_4}] + \exp[(B_1+B_3)^{C_5}] + \exp[(B_1+B_2)^{C_6}] +\\
+    \exp[(B_1+B_2+B_3)^{C_7}] = -C_0\\
+\end{multline}
+
+\hbox{Make non-zero}
+\begin{multline}\\
+    \exp[B_1^{C_1}] + \exp[B_2^{C_2}] + \exp[B_3^{C_3}] +\\
+    \exp[(B_2+B_3)^{C_4}] + \exp[(B_1+B_3)^{C_5}] + \exp[(B_1+B_2)^{C_6}] +\\
+    \exp[(B_1+B_2+B_3)^{C_7}] = -C_0\\
+\end{multline}
 
 
 
