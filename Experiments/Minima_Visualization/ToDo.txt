@@ -1,0 +1,71 @@
+AUTHOR: Daniel Fishbein
+
+----------------------------------------
+GOAL: ----------------------------------
+----------------------------------------
+
+Visualize minima and show when something should no longer be in a specific class
+
+
+----------------------------------------
+IN PROGRESS: ---------------------------
+----------------------------------------
+
+Make Siguation 1 (NN_Adding.py):
+
+NN with 2 input corrasoponding to 2 grey-scale pixels.
+
+3 outputs: 
+
+    1. if p1+p2 < 255
+    2. if p1+p2 > 255
+    3. if p1+p2 = 255
+
+
+Make Siguation 2:
+
+NN with 2 input corrasoponding to 2 grey-scale pixels.
+
+3 outputs: 
+
+    1. if p1 > p2
+    2. if p1 < p2
+    3. if p1 = p2
+
+
+Make Siguation 3:
+
+NN with 2 input corrasoponding to 2 grey-scale pixels.
+
+3 outputs: 
+
+    1. if p1 > p2 and p1 < 128
+    2. if p1 < p2 and p2 > 128
+    3. else
+
+
+Import the weights and biases into a Visualize program that
+graphs the given equasions. Each plane is color coated.
+and only the highest points show (will be a multi colored plane)
+
+Identify if maximas are manipulatable.
+
+
+
+Make Siguation 4:
+
+NN with 2 input corrasoponding to 2 grey-scale pixels.
+
+3 outputs: 
+
+    1. if "white"
+    2. if "black"
+
+note: we will need to spend a few hours manually labeling data
+
+
+
+----------------------------------------
+COMPLETED: -----------------------------
+----------------------------------------
+

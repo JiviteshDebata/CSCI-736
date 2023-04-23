@@ -1,0 +1,21 @@
+Hard stuck on math.
+
+The matrix aproach is [z][I1] == [z][I2].
+This approach is stuck because of the non-linearity of [z].
+
+[z] = H([x][w]+[b]) where H(x) in invertable but not linear.
+Generaly: IF H(x) is nonlinear, than H^-1(x)H(x)G(x) != G(x) even if G(x) is linear.
+
+Given that [I1] = [1 0 0] and [I2] = [0 0 0] it is currently unclear if [I1] and [I2] are general cases or special cases where H^-1(x)H(x)G(x) == G(x)
+                  [0 0 0]            [0 1 0]
+                  [0 0 0]            [0 0 0]
+
+
+The ALGRIBREIC aprach is stuck since it is not clear how to deal with e^(ax) + e^(by) = C
+
+While e^(ax) + e^(by) = C does have solutions most of the time, I can not find how to go about solving this for x or y.
+
+
+While the current focus is on 2 variables, (x1, x2) the solution to this equasion needs to be adaptable to (x1, x2, x3,... ,xn). 
+
+The solution does not need to be efficient, only better than x^n where x is all possible input values of x and n is all input nodes.
