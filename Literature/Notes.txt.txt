@@ -1,0 +1,15 @@
+Proposal
+Write-up: You will write and submit to MyCourses a brief, concise document (PDF) describing the following:
+
+the type of project you will conduct
+motivation - why should we care? why is this worth pursuing or interesting to the class? (relevance to topic/course)
+a clear problem description (mix of relevant mathematics and clear writing)
+relevant papers (citations with links or attached PDFs of relevant pubs), with brief description of the key ones
+a rough timeline / basic plan of what you will do with the time alloted
+an overview / description of the overall study to be conducted, e.g., potential experimental design, data to be used, etc.
+Presentation: You will be required to deliver an 15-20 minute (depends on how many teams per day end up presenting) presentation describing what your research project will be. You may use Powerpoint-style slides or not (alternatives include: Beamer, Keynote), as you see best to present your proposed work. I will expect to at least see the same points mentioned above for the write-up in the proposal presentation as well. The presentation slides are due 20 mintues before February 28 class.
+
+Peer Evaluation: You will be required to provide feedback to your fellow classmates. Your feedback for the proposal should include suggestions/comments on the proposed work and at least 2 questions for the presenters to consider going forward in the semester with their work. Feedback must be typed (could be put in a *.txt or clean PDF, this is up to you). Your peer feedback will be compiled into one document so you can adjust/integrate what your classmates provide to you going forward in the semester. Peer review is due 11:59am, March 1 & March 3 (the noon of the day after each proposal presentation day).
+
+Deliverable(s): The proposal must submitted to a MyCourses dropbox by 11:59pm February 27. Feedback must be submitted to the MyCourses dropbox by noon of the following day of the class that the presentation was given. Slides must be submitted to dropbox no later than 20 minutes before the class of the day that the presentation is to be given. 
+You will be expected to use LaTex to write your proposal (which will help you start the final paper) and to use NIPS format. The basic template and style files have been provided to you on this project page for you to readily use on something like Overleaf (which you can create a free account on). Note that you do not have to use Overleaf if you have a different tool/site you prefer to use for writing/compiling LaTex, e.g., MiKTeX.
