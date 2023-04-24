@@ -1,9 +1,10 @@
 # Fdb version 4
-["pdflatex"] 1682209619 "c:/Users/johns/Documents/NNandML/OpenSet/Project/CSCI-736/Experiments/Math_Equasions/Solve_for_Z_algibra/Solving_for_Z.tex" "Solving_for_Z.pdf" "Solving_for_Z" 1682209620 0
+["pdflatex"] 1682310763 "c:/Users/johns/Documents/NNandML/OpenSet/Project/CSCI-736/Experiments/Math_Equasions/Solve_for_Z_algibra/Solving_for_Z.tex" "Solving_for_Z.pdf" "Solving_for_Z" 1682310764 0
   "C:/Users/johns/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1681239732 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/johns/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1674841424 23172981 3889eeb253c6879e78cd13b47d9b934a ""
   "C:/Users/johns/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233955448 1004 54797486969f23fa377b128694d548df ""
   "C:/Users/johns/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1233955448 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
+  "C:/Users/johns/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "C:/Users/johns/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "C:/Users/johns/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmex10.tfm" 1136768653 992 662f679a0b3d2d53c1b94050fdaa3f50 ""
   "C:/Users/johns/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmmi12.tfm" 1136768653 1524 4414a8315f39513458b80dfc63bff03a ""
@@ -16,6 +17,7 @@
   "C:/Users/johns/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmsy10.tfm" 1136768653 1124 6c73e740cf17375f03eec0ee63599741 ""
   "C:/Users/johns/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmsy6.tfm" 1136768653 1116 933a60c408fc0a863a92debe84b2d294 ""
   "C:/Users/johns/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmsy8.tfm" 1136768653 1120 8b7d695260f3cff42e636090a8002094 ""
+  "C:/Users/johns/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb" 1247596666 34811 78b52f49e893bcba91bd7581cdc144c0 ""
   "C:/Users/johns/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1247596666 32080 340ef9bf63678554ee606688e7b5339d ""
   "C:/Users/johns/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1247596667 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
   "C:/Users/johns/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb" 1247596667 36741 0ee9e374ec3e30da87cdfb0ea3575226 ""
@@ -56,9 +58,9 @@
   "C:/Users/johns/AppData/Local/Programs/MiKTeX/tex/latex/kvsetkeys/kvsetkeys.sty" 1665066333 13815 760b0c02f691ea230f5359c4e1de23a7 ""
   "C:/Users/johns/AppData/Local/Programs/MiKTeX/tex/latex/l3backend/l3backend-pdftex.def" 1673904422 30429 213676d4c7327a21d91ddaed900e7b81 ""
   "Given_NN.png" 1681234570 15856 d367efa419e691b7724d9d936f700038 ""
-  "Solving_for_Z.aux" 1682209620 493 7c9773adb824a14306ae7c1a7e3bf895 "pdflatex"
-  "Solving_for_Z.tex" 1682209618 23755 0c6a840c5a016d387057340eed5c2ebc ""
-  "c:/Users/johns/Documents/NNandML/OpenSet/Project/CSCI-736/Experiments/Math_Equasions/Solve_for_Z_algibra/Solving_for_Z.tex" 1682209618 23755 0c6a840c5a016d387057340eed5c2ebc ""
+  "Solving_for_Z.aux" 1682310764 2028 ab27028423bd1a7130d75c80b8dd0c60 "pdflatex"
+  "Solving_for_Z.tex" 1682310763 24179 fe2aabcdad2bf929bd056660d57a560c ""
+  "c:/Users/johns/Documents/NNandML/OpenSet/Project/CSCI-736/Experiments/Math_Equasions/Solve_for_Z_algibra/Solving_for_Z.tex" 1682310763 24179 fe2aabcdad2bf929bd056660d57a560c ""
   (generated)
   "Solving_for_Z.aux"
   "Solving_for_Z.log"
