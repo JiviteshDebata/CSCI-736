@@ -747,11 +747,29 @@ variables than we can solve for an arbitrary number of inputs.\newline}
     B_3 = -w_{x_1->y_3} * x_1 + w_{x_2->y_3} * x_2 + b_{y_3}\\
 \end{multline}
 
+\hbox{MESSING AROUND -> Sub in B:}
+\hbox{Sub in B and expand powers of $e$:}
+\begin{multline}\\
+    C_0 + 
+    C_1e^{-w_{x_1->y_1} * x_1}*e^{w_{x_2->y_1} * x_2}*e^{b_{y_1}} + \\
+    C_2e^{-w_{x_1->y_2} * x_1}*e^{w_{x_2->y_2} * x_2}*e^{b_{y_2}} + \\
+    C_3e^{-w_{x_1->y_3} * x_1}*e^{ w_{x_2->y_3} * x_2}*e^{b_{y_3}} + ... \\
+\end{multline}
 
 
 
 
 \section{Conclusion}
+
+$x^n$
+
+\hbox{$n =$ number of input parameters}
+\hbox{$x =$ number of different values n can take}
+
+
+$(256*3)^{1280*720} \approx 10^{2659148}$
+
+\hbox{Note: There are $\approx 10^{82}$ atoms in the observable universe}
 Not much of a paper, but it's a start.
 
 \end{document}
