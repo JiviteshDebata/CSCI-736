@@ -1,0 +1,40 @@
+notes:
+
+"An all-too-common story
+of late is that of plugging a deep network into an application as a black box, training it on copious training data and then significantly improving performance over classical
+approaches"
+
+"Despite this empirical progress, the precise mechanisms by
+which deep learning works so well remain relatively poorly
+understood, adding an air of mystery to the entire field. Ongoing attempts to build a rigorous mathematical framework
+fall roughly into five camps: (i) probing and measuring DNs
+to visualize their inner workings (Zeiler & Fergus, 2014); (ii)
+analyzing their properties such as expressive power (Cohen
+et al., 2016), loss surface geometry (Lu & Kawaguchi, 2017;
+Soudry & Hoffer, 2017), nuisance management (Soatto &
+Chiuso, 2016), sparsification (Papyan et al., 2017), and generalization abilities; (iii) new mathematical frameworks that
+share some (but not all) common features with DNs (Bruna
+& Mallat, 2013); (iv) probabilistic generative models from
+which specific DNs can be derived (Arora et al., 2013; Patel
+et al., 2016); and (v) information theoretic bounds (Tishby
+& Zaslavsky, 2015)."
+
+you can take a NN and split it up into slines of the function.
+
+    - sline is a piece wise "representation"(aproxomation) of the original funciton.
+        - think about what yoiu do when you take a derivitive of a discontinious function or one with a kink
+        - also think of Computergraphics curvers.  (use several smaller easier  to calculate curvers to get the more complicated one you care about)
+    
+    - afine in this context means to map from one space to another. 
+        - "u-substatution" in calc falls into afine transofrms I thnk.
+    
+NN's that use relu, leaky relu, and abs() activation funcitons can be reduced dwon to:
+
+note: [A] referes to maytrix A
+z(x) = W_z max([A]([A]...([A]p[x]+[B])+[B])+b) + b   -> eq 11
+
+see eq 7 for how htis works in a CNN in a closed forumla that can be coptomized.
+
+
+TLDR:  This paper segests that we can cut up the input and output space into affine (map once space to another) spines. they dub using the "max()" operator max affine spline opperators (MASO). The then use optomization theory to understand them better.  do note that optomization theory is fucking hard BUT "kinda" understood. This means that a NN is not a black box and can now be connected to the rest of matmatics and the theories involved in them. the e^i*\pi*x = sin(x) + i*cos(x) if you will (assuming true*).  Then then demonstate that this works emiricly by  showing that an idea posed in NN to make the calsses orthogonal (90 degresss from each other) but couldnt quite get working at the time. then then apply the orthogonality consept of standard optomization theory (see eq 13) tothe loss fucntion of a NN. the NN then apears to do about 2% better at every intervul (54 -> 56% accuricy at the same time intervul). Not a lot but does demonstate their connection and orthoginality was arbitrary. 
+
