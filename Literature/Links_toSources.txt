@@ -1,0 +1,3 @@
+interperlation vs. extrapolation:
+
+https://www.techtarget.com/whatis/definition/extrapolation-and-interpolation#:~:text=Extrapolation%20refers%20to%20estimating%20an,within%20a%20sequence%20of%20values.

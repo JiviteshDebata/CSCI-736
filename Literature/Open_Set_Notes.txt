@@ -1,0 +1,45 @@
+
+-------------------------------------------------------------------------------------------
+------------------------------------ LEARN THE PROBLEM ------------------------------------
+-------------------------------------------------------------------------------------------
+PAPER: Toward Open Set Recognition
+YEAR: 2012
+GOOD SECTIONS: Introduction, Section 1, Section 2
+GOOD EXPLINATION OF: a formal def for open set
+URL: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6365193
+
+
+
+PAPER: Towards Open Set Deep Networks
+YEAR: 2016
+GOOD SECTIONS: 
+GOOD EXPLINATION OF: another way to think about open set
+URL: https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Bendale_Towards_Open_Set_CVPR_2016_paper.pdf
+
+
+
+
+-------------------------------------------------------------------------------------------
+------------------------------------ MOST RECENT WORK -------------------------------------
+-------------------------------------------------------------------------------------------
+PAPER: The familiarity hypothesis: Explaining the behavior of deep open set methods
+YEAR: 2022
+GOOD SECTIONS: 
+GOOD EXPLINATION OF: Most recent works
+URL: https://reader.elsevier.com/reader/sd/pii/S0031320322004125?token=848203F5A25F87E5EBA1838DE716958968573A2072D0114756F22AD1CDB7FDABF034486DDF818DD7F5F9EC7B61D7691D&originRegion=us-east-1&originCreation=20230220212645
+
+
+
+PAPER: MetaMax: Improved Open-Set Deep Neural Networks via Weibull Calibration
+YEAR: 2023
+GOOD SECTIONS: 
+GOOD EXPLINATION OF: Most recent works
+URL: https://openaccess.thecvf.com/content/WACV2023W/DNOW/papers/Lyu_MetaMax_Improved_Open-Set_Deep_Neural_Networks_via_Weibull_Calibration_WACVW_2023_paper.pdf
+
+
+
+PAPER: Spatial location constraint prototype loss for open set recognition
+YEAR: 2023
+GOOD SECTIONS: 
+GOOD EXPLINATION OF: Most recent works, visual intuition of the problem space, a summery/compalation of previous work
+URL: https://reader.elsevier.com/reader/sd/pii/S1077314223000310?token=E68D1A9355F0E7B6689C375DABD465AB1EB4C44BD0B5E9606E861AB334E291B504753D80AE588D1310FA27A143B9AA03&originRegion=us-east-1&originCreation=20230220214641

@@ -1,0 +1,14 @@
+ls.
+Why gate units? To avoid input weight con
+icts, inj controls the error 
+ow to memory cell
+cj 's input connections wcj i . To circumvent cj 's output weight con
+icts, outj controls the error
+
+ow from unit j's output connections. In other words, the net can use inj to decide when to keep
+or override information in memory cell cj , and outj to decide when to access memory cell cj and
+when to prevent other units from being perturbed by cj (see Figure 1).
+Error signals trapped within a memory cell's CEC cannot change { but dierent error signals
+
+owing into the cell (at dierent times) via its output gate may get superimposed. The output
+gate will have to learn which errors to trap in its CEC, by appropriately scaling them. The 

@@ -1,0 +1,21 @@
+Team 8: Attention is all you need
+
+finds a way to increase inputs for sections you care about and reduce the ones you dont and then label the image 
+
+1.) apply a "filter"/"mask" that might identify floor or cat or dog or person.
+
+	- these "filters" are "learned".
+
+2.) then feed these filters though a network to classify.
+	
+	- the more of these layers you give the more "context" is given than the better this preforms
+
+this can be done for:
+	language translation
+	image classification
+	and any other task you give it
+	
+
+
+
+

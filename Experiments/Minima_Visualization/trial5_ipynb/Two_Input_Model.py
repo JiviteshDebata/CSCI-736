@@ -36,7 +36,7 @@ if (input("Do you wish to use the defaults? [Y/N]") == "N"):
     ep = input("How many epochs?")
     ds = input("how many data points do you wish to train on?")
 
-experiment = int(ei) if ei != "" else 1
+experiment = int(ei) if ei != "" else 4
 color_bias = int(cb) if cb != "" else 150
 pixel_val_max = int(pvmax) if pvmax != "" else 255
 pixel_val_min = int(pvmin) if pvmax != "" else 0
@@ -91,7 +91,7 @@ def S1(X, n, input_tracker):
     answer_tracker = [0,0,0]
     for i, (x1, x2) in enumerate(X):
         answer_tracker = [0,0,0]
-        if (x1 + x2) < (2*pixel_val_min + n):
+        if (x1 + x2) < (pixel_val_min + 2*n):
             answer_tracker[0] = 1
             y[i, 0] = 1
         elif (x1 + x2) > (2*pixel_val_max - n):
@@ -199,21 +199,23 @@ def s4(folder_path):
 
 
 
-def pick_experiment(expar_number, X, color_bias, sum_of_inputs):
-    y = 0
-    if expar_number == 1:
-        y, sum_of_inputs = S1(X, color_bias, sum_of_inputs)
-    elif expar_number == 2:
-        y, sum_of_inputs = S2(X, color_bias, sum_of_inputs)
-    elif expar_number == 3:
-        y, sum_of_inputs = S3(X, color_bias, sum_of_inputs)
-    elif expar_number == 4:
-        y, sum_of_inputs = s4("C:\\Users\\johns\\Documents\\NNandML\\OpenSet\\Project\\Minima_Visualization\\trial5-ipynb")
-    return y, sum_of_inputs
+# def pick_experiment(expar_number, X, color_bias, sum_of_inputs):
+#     y = 0
+#     if expar_number == 1:
+#         y, sum_of_inputs = S1(X, color_bias, sum_of_inputs)
+#     elif expar_number == 2:
+#         y, sum_of_inputs = S2(X, color_bias, sum_of_inputs)
+#     elif expar_number == 3:
+#         y, sum_of_inputs = S3(X, color_bias, sum_of_inputs)
+#     elif expar_number == 4:
+#         y, sum_of_inputs = s4(r"C:\Users\johns\Documents\NNandML\OpenSet\Project\CSCI-736\Experiments\Minima_Visualization\trial5_ipynb")
+#     return y, sum_of_inputs
 
 sum_of_inputs = [0,0,0]
-# human_data, human_answers = 
-y, sum_of_inputs = pick_experiment(expar_number=experiment,X=X, color_bias=color_bias, sum_of_inputs=sum_of_inputs)
+human_data, human_answers = s4(r"C:\Users\johns\Documents\NNandML\OpenSet\Project\CSCI-736\Experiments\Minima_Visualization\trial5_ipynb")
+X = human_data
+y = human_answers
+# y, sum_of_inputs = pick_experiment(expar_number=experiment,X=X, color_bias=color_bias, sum_of_inputs=sum_of_inputs)
 # Train the model
 model.fit(X, y, epochs=epochs, verbose=2)
 

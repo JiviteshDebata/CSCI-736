@@ -1,0 +1,54 @@
+note:
+
+DEF: extrapolation -  
+	as predicting the future (realization) of a stationary Gaussian process
+based on past and current realizations - k. Kolmogoroff (1941); Wiener (1949) 
+
+DEF: interpolation -
+	predicting the possible realization of such process at a time position lying in-between observations, i.e., interpolation resamples the past
+
+
+DEF (FORMAL):  
+	Interpolation occurs for a sample x whenever this sample belongs to the convex hull of a
+set of samples X , {x1, . . . , xN }, if not, extrapolation occurs
+
+'Beyond those, the following adage “as an algorithm transitions from interpolation to extrapolation, as its
+performance decreases” is commonly agreed upon.'
+
+	- "convex hull" == "shape"
+
+"Our goal in this paper is to demonstrate both theoretically and empirically for both synthetic and real data
+that interpolation almost surely never occurs in high-dimensional spaces (> 100) regardless of the underlying intrinsic dimension of the data manifold.
+	- currently employed/deployed models are extrapolating
+	- given the super-human performances achieved by those models, extrapolation regime is not necessarily to be avoided, and is not an indicator of generalization performances"
+
+
+
+	- The sample space is so large that you will never take somehting between 2 points of known data.
+	- you will ALWAYS be sampling new points
+
+
+Theorem 1:
+	 (B´ar´any and F¨uredi (1988)). Given a d-dimensional dataset X , {x1, . . . , xN } with i.i.d.
+samples uniformly drawn from an hyperball, the probability that a new sample x is in interpolation
+regime (recall Def. 1) has the following asymptotic behavior
+lim d→∞ p(x ∈ Hull(X)) = (1 ⇐⇒ N > d^(−1) * 2^(d/2)
+		"interpolation"	 0 ⇐⇒ N < d^(−1) * 2^(d/2))
+
+
+
+TLDR: This paper points out that as dimensions increase the volume of a shape increases exponentially.  This means that if you will be pulling a smaller and smaller portino of the sample space for training asdimentionas rise.  After 100 dimentions (100 pixel image - 10pX10p) you are hoplessly lost and will never get a sample on a boundery condition. This leads to the conclusion that NN will always be extrapolating (trying new data) rather than inerpolaing (sampling old data). They also warn agains using dimentionalaity reduction techniques to analyse the data (the grouping). these techniques will give a miss representation of the actual shape of hte oject and atificially put htings together that are not supposed to be.  
+
+First part about growing spaces makes sense and seams obvious to most math people. I am not sure why this needed to be said in a 2021 paper. feels like old news.
+the second part about viewing data in high dimentions using dimentionality reduction, while I understand that it allwos for charry picking (see figure 5) i wouldnt say its useless. Rather, there is more there than just what is shown. there is a way to do dimentionality reduction correctly but you probably need to do more to find hte shape of the data and thus the corisponding technique that is the least cherry picked.  IDK what those techniques are though.
+
+
+
+
+
+
+
+
+
+
+
