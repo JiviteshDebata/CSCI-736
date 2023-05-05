@@ -6,13 +6,13 @@ approaches"
 
 "Despite this empirical progress, the precise mechanisms by
 which deep learning works so well remain relatively poorly
-understood, adding an air of mystery to the entire field. Ongoing attempts to build a rigorous mathematical framework
+understood, adding an air of mystery to the entire field. Ongoing attempts to build a rigorous mathematical framework
 fall roughly into five camps: (i) probing and measuring DNs
 to visualize their inner workings (Zeiler & Fergus, 2014); (ii)
 analyzing their properties such as expressive power (Cohen
 et al., 2016), loss surface geometry (Lu & Kawaguchi, 2017;
 Soudry & Hoffer, 2017), nuisance management (Soatto &
-Chiuso, 2016), sparsification (Papyan et al., 2017), and generalization abilities; (iii) new mathematical frameworks that
+Chiuso, 2016), sparsification (Papyan et al., 2017), and generalization abilities; (iii) new mathematical frameworks that
 share some (but not all) common features with DNs (Bruna
 & Mallat, 2013); (iv) probabilistic generative models from
 which specific DNs can be derived (Arora et al., 2013; Patel
@@ -27,6 +27,8 @@ you can take a NN and split it up into slines of the function.
     
     - afine in this context means to map from one space to another. 
         - "u-substatution" in calc falls into afine transofrms I thnk.
+
+it is interesting and convenient to note that splines can be 1d and dementionally independent of each other.
     
 NN's that use relu, leaky relu, and abs() activation funcitons can be reduced dwon to:
 
