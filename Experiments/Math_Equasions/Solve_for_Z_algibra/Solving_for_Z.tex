@@ -721,9 +721,13 @@
 
 \hbox{Let me reorganize our equasion:}
 \begin{multline}\\
-    C_0 + C_1e^{B_1} + C_2e^{B_2} + C_3e^{B_3} +\\
-    %
-    C_4e^{B_2+B_3} + C_5e^{B_1+B_3} + C_6e^{B_1+B_2} +\\
+    C_0 + 
+    C_1e^{B_1} + 
+    C_2e^{B_2} + 
+    C_3e^{B_3} +\\
+    C_4e^{B_2+B_3} + 
+    C_5e^{B_1+B_3} + 
+    C_6e^{B_1+B_2} +\\
     C_7e^{B_1+B_2+B_3} = 0\\
 \end{multline}
 
@@ -753,10 +757,58 @@ variables than we can solve for an arbitrary number of inputs.\newline}
     C_0 + 
     C_1e^{-w_{x_1->y_1} * x_1}*e^{w_{x_2->y_1} * x_2}*e^{b_{y_1}} + \\
     C_2e^{-w_{x_1->y_2} * x_1}*e^{w_{x_2->y_2} * x_2}*e^{b_{y_2}} + \\
-    C_3e^{-w_{x_1->y_3} * x_1}*e^{ w_{x_2->y_3} * x_2}*e^{b_{y_3}} + ... \\
+    C_3e^{-w_{x_1->y_3} * x_1}*e^{ w_{x_2->y_3} * x_2}*e^{b_{y_3}} + \\
+    C_4e^{-w_{x_1->y_1} * x_1}*e^{w_{x_2->y_1} * x_2}*e^{b_{y_1}} e^{-w_{x_1->y_3} * x_1}*e^{ w_{x_2->y_3} * x_2}*e^{b_{y_3}} + \\
+    C_5e^{-w_{x_1->y_1} * x_1}*e^{w_{x_2->y_1} * x_2}*e^{b_{y_1}} e^{-w_{x_1->y_2} * x_1}*e^{w_{x_2->y_2} * x_2}*e^{b_{y_2}} + \\
+    C_6e^{-w_{x_1->y_2} * x_1}*e^{w_{x_2->y_2} * x_2}*e^{b_{y_2}} e^{-w_{x_1->y_3} * x_1}*e^{ w_{x_2->y_3} * x_2}*e^{b_{y_3}} + \\
+    C_7e^{-w_{x_1->y_1} * x_1}*e^{w_{x_2->y_1} * x_2}*e^{b_{y_1}} e^{-w_{x_1->y_2} * x_1}*e^{w_{x_2->y_2} * x_2}*e^{b_{y_2}} e^{-w_{x_1->y_3} * x_1}*e^{ w_{x_2->y_3} * x_2}*e^{b_{y_3}} \\
+    = 0
 \end{multline}
 
 
+\hbox{Define: }
+\begin{multline}\\
+    \alpha = e^x_1\\
+    \beta = e^x_2
+\end{multline}
+
+\hbox{sub in $\alpha$ and $\beta$}
+\begin{multline}\\
+    C_0 + 
+    C_1\alpha^{-w_{x_1->y_1}}*\beta^{w_{x_2->y_1}} *e^{b_{y_1}} + \\
+    C_2\alpha^{-w_{x_1->y_2}}*\beta^{w_{x_2->y_2}} *e^{b_{y_2}} + \\
+    C_3\alpha^{-w_{x_1->y_3}}*\beta^{w_{x_2->y_3}} *e^{b_{y_3}} + \\
+    C_4\alpha^{-w_{x_1->y_1}}*\beta^{w_{x_2->y_1}} *e^{b_{y_1}} \alpha^{-w_{x_1->y_3}}*\beta^{w_{x_2->y_3}} *e^{b_{y_3}} + \\
+    C_5\alpha^{-w_{x_1->y_1}}*\beta^{w_{x_2->y_1}} *e^{b_{y_1}} \alpha^{-w_{x_1->y_2}}*\beta^{w_{x_2->y_2}} *e^{b_{y_2}} + \\
+    C_6\alpha^{-w_{x_1->y_2}}*\beta^{w_{x_2->y_2}} *e^{b_{y_2}} \alpha^{-w_{x_1->y_3}}*\beta^{w_{x_2->y_3}} *e^{b_{y_3}} + \\
+    C_7\alpha^{-w_{x_1->y_1}}*\beta^{w_{x_2->y_1}} *e^{b_{y_1}} \alpha^{-w_{x_1->y_2}}*\beta^{w_{x_2->y_2}} *e^{b_{y_2}} \alpha^{-w_{x_1->y_3}}*\beta^{w_{x_2->y_3}}*e^{b_{y_3}} \\
+    = 0
+\end{multline}
+
+
+\hbox{subtract $C_0$}
+\begin{multline}\\
+    C_1\alpha^{-w_{x_1->y_1}}*\beta^{w_{x_2->y_1}} *e^{b_{y_1}} + \\
+    C_2\alpha^{-w_{x_1->y_2}}*\beta^{w_{x_2->y_2}} *e^{b_{y_2}} + \\
+    C_3\alpha^{-w_{x_1->y_3}}*\beta^{w_{x_2->y_3}} *e^{b_{y_3}} + \\
+    C_4\alpha^{-w_{x_1->y_1}}*\beta^{w_{x_2->y_1}} *e^{b_{y_1}} \alpha^{-w_{x_1->y_3}}*\beta^{w_{x_2->y_3}} *e^{b_{y_3}} + \\
+    C_5\alpha^{-w_{x_1->y_1}}*\beta^{w_{x_2->y_1}} *e^{b_{y_1}} \alpha^{-w_{x_1->y_2}}*\beta^{w_{x_2->y_2}} *e^{b_{y_2}} + \\
+    C_6\alpha^{-w_{x_1->y_2}}*\beta^{w_{x_2->y_2}} *e^{b_{y_2}} \alpha^{-w_{x_1->y_3}}*\beta^{w_{x_2->y_3}} *e^{b_{y_3}} + \\
+    C_7\alpha^{-w_{x_1->y_1}}*\beta^{w_{x_2->y_1}} *e^{b_{y_1}} \alpha^{-w_{x_1->y_2}}*\beta^{w_{x_2->y_2}} *e^{b_{y_2}} \alpha^{-w_{x_1->y_3}}*\beta^{w_{x_2->y_3}}*e^{b_{y_3}} \\
+    = -C_0
+\end{multline}
+
+\hbox{deivide by $-C_0$}
+\begin{multline}\\
+    - \frac{C_1}{C_0}\alpha^{-w_{x_1->y_1}}*\beta^{w_{x_2->y_1}} *e^{b_{y_1}}\\
+    - \frac{C_2}{C_0}\alpha^{-w_{x_1->y_2}}*\beta^{w_{x_2->y_2}} *e^{b_{y_2}}\\
+    - \frac{C_3}{C_0}\alpha^{-w_{x_1->y_3}}*\beta^{w_{x_2->y_3}} *e^{b_{y_3}}\\
+    - \frac{C_4}{C_0}\alpha^{-w_{x_1->y_1}}*\beta^{w_{x_2->y_1}} *e^{b_{y_1}} \alpha^{-w_{x_1->y_3}}*\beta^{w_{x_2->y_3}} *e^{b_{y_3}}\\
+    - \frac{C_5}{C_0}\alpha^{-w_{x_1->y_1}}*\beta^{w_{x_2->y_1}} *e^{b_{y_1}} \alpha^{-w_{x_1->y_2}}*\beta^{w_{x_2->y_2}} *e^{b_{y_2}}\\
+    - \frac{C_6}{C_0}\alpha^{-w_{x_1->y_2}}*\beta^{w_{x_2->y_2}} *e^{b_{y_2}} \alpha^{-w_{x_1->y_3}}*\beta^{w_{x_2->y_3}} *e^{b_{y_3}}\\
+    - \frac{C_7}{C_0}\alpha^{-w_{x_1->y_1}}*\beta^{w_{x_2->y_1}} *e^{b_{y_1}} \alpha^{-w_{x_1->y_2}}*\beta^{w_{x_2->y_2}} *e^{b_{y_2}} \alpha^{-w_{x_1->y_3}}*\beta^{w_{x_2->y_3}}*e^{b_{y_3}}\\
+    = 1
+\end{multline}
 
 
 \section{Conclusion}

@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1682818973 "c:/Users/johns/Documents/NNandML/OpenSet/Project/CSCI-736/Experiments/Math_Equasions/Solve_for_Z_algibra/Solving_for_Z.tex" "Solving_for_Z.pdf" "Solving_for_Z" 1682818974 0
-  "C:/Users/johns/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1681239732 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
+["pdflatex"] 1683418676 "c:/Users/johns/Documents/NNandML/OpenSet/Project/CSCI-736/Experiments/Math_Equasions/Solve_for_Z_algibra/Solving_for_Z.tex" "Solving_for_Z.pdf" "Solving_for_Z" 1683418677 0
+  "C:/Users/johns/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1683143020 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/johns/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1674841424 23172981 3889eeb253c6879e78cd13b47d9b934a ""
   "C:/Users/johns/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233955448 1004 54797486969f23fa377b128694d548df ""
   "C:/Users/johns/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1233955448 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -58,9 +58,9 @@
   "C:/Users/johns/AppData/Local/Programs/MiKTeX/tex/latex/kvsetkeys/kvsetkeys.sty" 1665066333 13815 760b0c02f691ea230f5359c4e1de23a7 ""
   "C:/Users/johns/AppData/Local/Programs/MiKTeX/tex/latex/l3backend/l3backend-pdftex.def" 1673904422 30429 213676d4c7327a21d91ddaed900e7b81 ""
   "Given_NN.png" 1681234570 15856 d367efa419e691b7724d9d936f700038 ""
-  "Solving_for_Z.aux" 1682818974 2028 ab27028423bd1a7130d75c80b8dd0c60 "pdflatex"
-  "Solving_for_Z.tex" 1682818972 24787 b2feffa04e74628c90ae4dd9b357a0d3 ""
-  "c:/Users/johns/Documents/NNandML/OpenSet/Project/CSCI-736/Experiments/Math_Equasions/Solve_for_Z_algibra/Solving_for_Z.tex" 1682818972 24787 b2feffa04e74628c90ae4dd9b357a0d3 ""
+  "Solving_for_Z.aux" 1683418677 2028 2a2140a4784e63a33196e7c06c523ee9 "pdflatex"
+  "Solving_for_Z.tex" 1683418675 28131 8c55fc7cf99a84c5443d540a8937813b ""
+  "c:/Users/johns/Documents/NNandML/OpenSet/Project/CSCI-736/Experiments/Math_Equasions/Solve_for_Z_algibra/Solving_for_Z.tex" 1683418675 28131 8c55fc7cf99a84c5443d540a8937813b ""
   (generated)
   "Solving_for_Z.aux"
   "Solving_for_Z.log"

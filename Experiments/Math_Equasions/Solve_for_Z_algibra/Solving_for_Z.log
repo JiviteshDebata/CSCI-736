@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2023.1.27)  29 APR 2023 21:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2023.1.27)  6 MAY 2023 20:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -260,7 +260,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 719--721
 
  []
 
-[16] [17] (Solving_for_Z.aux) ) 
+[16]
+Overfull \hbox (66.92767pt too wide) detected at line 766
+ []$[]\OML/cmm/m/it/10 C[]e[] \OMS/cmsy/m/n/10 ^^C \OML/cmm/m/it/10 e[] \OMS/cmsy/m/n/10 ^^C \OML/cmm/m/it/10 e[]e[] \OMS/cmsy/m/n/10 ^^C \OML/cmm/m/it/10 e[] \OMS/cmsy/m/n/10 ^^C \OML/cmm/m/it/10 e[]e[] \OMS/cmsy/m/n/10 ^^C \OML/cmm/m/it/10 e[] \OMS/cmsy/m/n/10 ^^C \OML/cmm/m/it/10 e[]$ 
+ []
+
+
+Overfull \hbox (1.63551pt too wide) detected at line 786
+ []$[]\OML/cmm/m/it/10 C[][] \OMS/cmsy/m/n/10 ^^C \OML/cmm/m/it/10 ^^L[] \OMS/cmsy/m/n/10 ^^C \OML/cmm/m/it/10 e[][] \OMS/cmsy/m/n/10 ^^C \OML/cmm/m/it/10 ^^L[] \OMS/cmsy/m/n/10 ^^C \OML/cmm/m/it/10 e[][] \OMS/cmsy/m/n/10 ^^C \OML/cmm/m/it/10 ^^L[] \OMS/cmsy/m/n/10 ^^C \OML/cmm/m/it/10 e[]$ 
+ []
+
+[17]
+Overfull \hbox (1.63551pt too wide) detected at line 799
+ []$[]\OML/cmm/m/it/10 C[][] \OMS/cmsy/m/n/10 ^^C \OML/cmm/m/it/10 ^^L[] \OMS/cmsy/m/n/10 ^^C \OML/cmm/m/it/10 e[][] \OMS/cmsy/m/n/10 ^^C \OML/cmm/m/it/10 ^^L[] \OMS/cmsy/m/n/10 ^^C \OML/cmm/m/it/10 e[][] \OMS/cmsy/m/n/10 ^^C \OML/cmm/m/it/10 ^^L[] \OMS/cmsy/m/n/10 ^^C \OML/cmm/m/it/10 e[]$ 
+ []
+
+
+Overfull \hbox (11.81331pt too wide) detected at line 811
+ []$[] \OMS/cmsy/m/n/10 ^^@ []\OML/cmm/m/it/10 [] \OMS/cmsy/m/n/10 ^^C \OML/cmm/m/it/10 ^^L[] \OMS/cmsy/m/n/10 ^^C \OML/cmm/m/it/10 e[][] \OMS/cmsy/m/n/10 ^^C \OML/cmm/m/it/10 ^^L[] \OMS/cmsy/m/n/10 ^^C \OML/cmm/m/it/10 e[][] \OMS/cmsy/m/n/10 ^^C \OML/cmm/m/it/10 ^^L[] \OMS/cmsy/m/n/10 ^^C \OML/cmm/m/it/10 e[]$ 
+ []
+
+[18] [19] (Solving_for_Z.aux) ) 
 Here is how much of TeX's memory you used:
  3075 strings out of 476404
  54082 string characters out of 2789524
@@ -270,9 +290,9 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  62i,8n,67p,1396b,243s stack positions out of 10000i,1000n,20000p,200000b,80000s
 <C:/Users/johns/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/johns/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/johns/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/johns/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/johns/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/johns/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/johns/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/johns/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/johns/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/johns/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/johns/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/johns/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/johns/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/johns/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on Solving_for_Z.pdf (17 pages, 202512 bytes).
+Output written on Solving_for_Z.pdf (19 pages, 206173 bytes).
 PDF statistics:
- 128 PDF objects out of 1000 (max. 8388607)
+ 135 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
